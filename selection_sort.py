@@ -18,3 +18,7 @@ def selectionSort(numbers):
         tempNum = numbers[element]
         numbers[element] = numbers[currentNum]
         numbers[currentNum] = tempNum
+
+        print(numbers)
+
+selectionSort(numbers)
