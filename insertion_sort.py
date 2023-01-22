@@ -15,3 +15,7 @@ def insertionSort(numbers):
         while numbers[currentNum - 1] > numbers[currentNum] and currentNum > 0: # while loop for comparing the 1st element in the unsorted part with the numbers in the sorted part
             numbers[currentNum - 1], numbers[currentNum] =  numbers[currentNum], numbers[currentNum - 1] # reposition the numbers in its correct order
             currentNum -= 1
+        
+        print(numbers) # prints the numbers per loop
+    
+    print(f"\nSorted numbers: {numbers}\n")
