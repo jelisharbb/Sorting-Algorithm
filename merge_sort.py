@@ -35,3 +35,9 @@ def mergeSort(numbers):
             if leftNum[leftNumIndex] < rightNum[rightNumIndex]: # if the leftmost number in the left subarray is smaller, it will be stored in a new variable
                 numbers[mergedNumIndex] = leftNum[leftNumIndex]
                 leftNumIndex += 1
+            
+            else: # if the leftmost number in the right subarray is smaller, it will be stored in a new variable
+                numbers[mergedNumIndex] = rightNum[rightNumIndex]
+                rightNumIndex += 1
+
+            mergedNumIndex += 1
