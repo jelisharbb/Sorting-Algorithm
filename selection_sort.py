@@ -5,3 +5,5 @@
 
 numbers = [57, 81, 45, 44, 82, 76, 26, 48, 67, 12]
 print(f"\nUnsorted numbers: {numbers}")
+
+def selectionSort(numbers):
