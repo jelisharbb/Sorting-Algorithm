@@ -11,3 +11,5 @@ def insertionSort(numbers):
 
     for element in range(1, len(numbers)): # for loop that will traverse the unsorted part of the list
         currentNum = element # stored the number temporarily in the variable in order to place it in its right position in the sorted part of the list
+
+        while numbers[currentNum - 1] > numbers[currentNum] and currentNum > 0: # while loop for comparing the 1st element in the unsorted part with the numbers in the sorted part
