@@ -20,3 +20,7 @@ def mergeSort(numbers):
     if len(numbers) > 1: # divides the subparts until it becomes single element
         leftNum = numbers[:len(numbers)//2] # stores first half of the numbers in a variable
         rightNum = numbers[len(numbers)//2:] # stores second half of the numbers in a variable
+
+        # for recursion
+        mergeSort(leftNum)
+        mergeSort(rightNum)
