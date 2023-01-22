@@ -8,3 +8,5 @@ numbers = [57, 81, 45, 44, 82, 76, 26, 48, 67, 12]
 print(f"\nUnsorted numbers: {numbers}\n")
 
 def insertionSort(numbers):
+
+    for element in range(1, len(numbers)): # for loop that will traverse the unsorted part of the list
