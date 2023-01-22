@@ -41,3 +41,8 @@ def mergeSort(numbers):
                 rightNumIndex += 1
 
             mergedNumIndex += 1
+        
+        # merging the left over numbers of the left subarray
+        while leftNumIndex < len(leftNum):
+            numbers[mergedNumIndex] = leftNum[leftNumIndex]
+            leftNumIndex += 1
