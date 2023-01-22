@@ -9,3 +9,4 @@ numbers = [57, 81, 45, 44, 82, 76, 26, 48, 67, 12]
 print(f"\nUnsorted numbers: {numbers}\n")
 
 def bubbleSort(numbers):
+    for element in range(len(numbers)-1, 0, -1): # external for loop for iterating elements from last to first position
