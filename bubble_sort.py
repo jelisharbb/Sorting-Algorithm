@@ -22,3 +22,5 @@ def bubbleSort(numbers):
         print(numbers) # prints the numbers per loop
     
     print(f"\nSorted numbers: {numbers}\n")
+
+bubbleSort(numbers)
