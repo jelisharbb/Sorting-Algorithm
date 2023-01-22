@@ -28,3 +28,5 @@ def mergeSort(numbers):
         leftNumIndex = 0 # keeps tracking of the left most number in the left array
         rightNumIndex = 0 # keeps tracking of the left most number in the right array
         mergedNumIndex = 0 # keeps tracking of the index in the merged array
+
+        while leftNumIndex < len(leftNum) and rightNumIndex < len(rightNum): # compares the leftmost number of the left subarray with the left most number in the right subarray
