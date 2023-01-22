@@ -10,3 +10,4 @@ print(f"\nUnsorted numbers: {numbers}\n")
 def insertionSort(numbers):
 
     for element in range(1, len(numbers)): # for loop that will traverse the unsorted part of the list
+        currentNum = element # stored the number temporarily in the variable for comparing
