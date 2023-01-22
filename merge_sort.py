@@ -53,3 +53,9 @@ def mergeSort(numbers):
             numbers[mergedNumIndex] = rightNum[rightNumIndex]
             rightNumIndex += 1
             mergedNumIndex +=1
+
+        print(numbers)
+
+mergeSort(numbers)
+
+print(f"\nSorted numbers: {numbers}\n")
