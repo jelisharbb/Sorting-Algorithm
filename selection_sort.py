@@ -21,6 +21,8 @@ def selectionSort(numbers):
         numbers[element] = numbers[currentNum]
         numbers[currentNum] = tempNum
 
-        print(numbers)
+        print(numbers) # prints the numbers per loop
+    
+    print(f"\nSorted numbers: {numbers}\n")
 
 selectionSort(numbers)
