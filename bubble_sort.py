@@ -10,3 +10,4 @@ print(f"\nUnsorted numbers: {numbers}\n")
 
 def bubbleSort(numbers):
     for element in range(len(numbers)-1, 0, -1): # external for loop for iterating elements from last to first position
+        for maxNum in range(element):
