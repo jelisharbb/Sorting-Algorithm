@@ -24,3 +24,7 @@ def mergeSort(numbers):
         # for recursion
         mergeSort(leftNum)
         mergeSort(rightNum)
+
+        leftNumIndex = 0 # keeps tracking of the left most number in the left array
+        rightNumIndex = 0 # keeps tracking of the left most number in the right array
+        mergedNumIndex = 0 # keeps tracking of the index in the merged array
