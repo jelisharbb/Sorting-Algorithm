@@ -19,3 +19,5 @@ def insertionSort(numbers):
         print(numbers) # prints the numbers per loop
     
     print(f"\nSorted numbers: {numbers}\n")
+
+insertionSort(numbers)
