@@ -24,5 +24,7 @@ def partition(numbers, left, right):
     pivotIndex = numbers[right]
 
     while leftIndex < rightIndex:
-        while leftIndex < right and numbers[leftIndex] < pivotIndex:
+        while leftIndex < right and numbers[leftIndex] < pivotIndex: # for traversing the elements from left to the number before pivot
             leftIndex += 1
+        while rightIndex > left and numbers[rightIndex] > pivotIndex: # for traversing the elements from right to the number before the pivot
+            rightIndex -= 1
