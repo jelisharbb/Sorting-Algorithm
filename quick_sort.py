@@ -9,3 +9,9 @@
 # unsorted list of numbers
 numbers = [57, 81, 45, 44, 82, 76, 26, 48, 67, 12]
 print(f"\nUnsorted numbers: {numbers}\n")
+
+def quickSort(numbers, left, right):
+    if left < right:
+        partitionPos = partition(numbers, left, right)
+        quickSort(numbers, left, partitionPos -1) # recursion of sorting from leftmost index to the number before the pivot
+        quickSort(numbers, partitionPos + 1, right) # recursion of sorting from the number after the pivot to the last element
