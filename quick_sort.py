@@ -28,3 +28,6 @@ def partition(numbers, left, right):
             leftIndex += 1
         while rightIndex > left and numbers[rightIndex] > pivotIndex: # for traversing the elements from right to the number before the pivot
             rightIndex -= 1
+
+        if leftIndex < rightIndex: # for crossing/swapping of the two elements
+            numbers[leftIndex], numbers[rightIndex] = numbers[rightIndex], numbers[leftIndex]
