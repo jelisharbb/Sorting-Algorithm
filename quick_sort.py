@@ -31,3 +31,8 @@ def partition(numbers, left, right):
 
         if leftIndex < rightIndex: # for crossing/swapping of the two elements
             numbers[leftIndex], numbers[rightIndex] = numbers[rightIndex], numbers[leftIndex]
+
+    if leftIndex > pivotIndex: # for swapping the pivot element and the leftmost bigger element
+        numbers[leftIndex], numbers[right] = numbers[right], numbers[leftIndex]
+
+    return leftIndex # returning the pivot element because the quick sort function needs to determine where to split the array for recursion
