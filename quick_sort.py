@@ -22,3 +22,7 @@ def partition(numbers, left, right):
     leftIndex = left
     rightIndex = right
     pivotIndex = numbers[right]
+
+    while leftIndex < rightIndex:
+        while leftIndex < right and numbers[leftIndex] < pivotIndex:
+            leftIndex += 1
