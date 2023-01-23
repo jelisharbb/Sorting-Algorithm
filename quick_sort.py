@@ -36,3 +36,7 @@ def partition(numbers, left, right):
         numbers[leftIndex], numbers[right] = numbers[right], numbers[leftIndex]
 
     return leftIndex # returning the pivot element because the quick sort function needs to determine where to split the array for recursion
+
+quickSort(numbers, 0, len(numbers)-1)
+
+print(f"\nSorted numbers: {numbers}\n")
